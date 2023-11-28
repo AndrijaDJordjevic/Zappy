@@ -1,0 +1,27 @@
+name: Server Tests
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Install dependencies
+      run: |
+        sudo apt update
+        sudo apt install python3
+
+    - name: Run server tests
+      run: |
+        make server_tests_run
+
+    - name: Check test results
+      run: |
+        if [ $? -ne 0 ]; then
+          echo "::error::Certains tests ont échoué. Veuillez consulter les journaux pour plus de détails."
+          exit 1
+        fi
+

@@ -1,0 +1,11 @@
+.vscode
+*.o
+zappy_*
+external/raylib
+coding-style.sh
+coding-style-reports.log
+raylib
+ai/src/__pycache__
+*.gc*
+unit_tests
+server/tests/fonctional_tests/__pycache__

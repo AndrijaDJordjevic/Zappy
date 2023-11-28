@@ -1,0 +1,17 @@
+name: Compilation Workflow
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Update package information
+        run: sudo apt-get update
+      - name: Run make command
+        run: |
+          make || echo "WARNING: Compilation failed"

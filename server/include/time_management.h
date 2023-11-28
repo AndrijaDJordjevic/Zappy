@@ -1,0 +1,42 @@
+/*
+** EPITECH PROJECT, 2023
+** zappy
+** File description:
+** time_management
+*/
+
+#ifndef TIME_MANAGEMENT_H_
+    #define TIME_MANAGEMENT_H_
+    #define LIFE_UNIT 126
+    #define FORWARD_TIME_UNIT 7
+    #define RIGHT_TIME_UNIT 7
+    #define LEFT_TIME_UNIT 7
+    #define LOOK_TIME_UNIT 7
+    #define INVENTORY_TIME_UNIT 1
+    #define BROADCAST_TIME_UNIT 7
+    #define CONNECT_NBR_TIME_UNIT 0
+    #define FORK_TIME_UNIT 42
+    #define EJECT_TIME_UNIT 7
+    #define TAKE_TIME_UNIT 7
+    #define SET_TIME_UNIT 7
+    #define INCANTATION_TIME_UNIT 300
+    #define DEAD_TIME_UNIT 0
+    #define NO_TIME_UNIT -1
+
+enum time_unit {
+    FORWARD = FORWARD_TIME_UNIT,
+    RIGHT = RIGHT_TIME_UNIT,
+    LEFT = LEFT_TIME_UNIT,
+    LOOK = LOOK_TIME_UNIT,
+    INVENTORY = INVENTORY_TIME_UNIT,
+    BROADCAST = BROADCAST_TIME_UNIT,
+    CONNECT_NBR = CONNECT_NBR_TIME_UNIT,
+    FORK = FORK_TIME_UNIT,
+    EJECT = EJECT_TIME_UNIT,
+    TAKE = TAKE_TIME_UNIT,
+    SET = SET_TIME_UNIT,
+    INCANTATION = INCANTATION_TIME_UNIT,
+    DEAD = DEAD_TIME_UNIT,
+    NO = NO_TIME_UNIT
+};
+#endif /* !TIME_MANAGEMENT_H_ */
